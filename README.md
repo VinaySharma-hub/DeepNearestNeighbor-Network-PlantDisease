@@ -1,4 +1,5 @@
 🌿 MAFDE-DN4 (Plant Disease Few-Shot Classification)
+
 📌 Overview
 
 MAFDE-DN4 is a few-shot learning model for plant disease classification based on Deep Nearest Neighbor Neural Network (DN4). It improves performance using attention and multi-scale feature fusion.
@@ -14,6 +15,7 @@ Improved Loss: Better class separation and stable training
 
 
 🌱 Dataset
+
 PlantVillage dataset (clean leaf images)
 Converted into N-way K-shot episodic tasks
 🎯 Few-Shot Setup
@@ -26,13 +28,16 @@ Each episode contains support + query images.
 CNN Backbone → BWFM → EA Attention → DN4 Matching → Classification
 
 📊 Results
+
 1-shot: ~57%
 5-shot: ~81%
 
 🚀 Usage
+
 pip install -r requirements.txt
 python train.py
 python test.py
 
 🌿 Goal
+
 Efficient plant disease classification with very limited labeled data using few-shot learning.
